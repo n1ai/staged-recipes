@@ -8,6 +8,9 @@ package:
 source:
   url: https://github.com/mobilinkd/m17-cxx-demod/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 5dac28a7aa0c252e06b1ef1723acf0ddb6630a2a8ede07f15809cd2faef0b367
+  patches:
+    - 0001-avoid-experimental-array-and-MAX_INPUT.patch
+    - 0002-avoid-experimental-array-in-apps-dir.patch
 
 build:
   number: 0
@@ -47,7 +50,7 @@ about:
   license_file: LICENSE
   summary: M17 Modulator & Demodulator in C++ (GPL)
   description: |
-    m17-cxx-demod from mobilinkd has programs that modulate or demodulate data according to the M17 specification https://m17-project.github.io/M17_spec 
+    m17-cxx-demod from mobilinkd has programs that modulate or demodulate data according to the M17 specification https://m17-project.github.io/M17_spec
   doc_url: https://github.com/mobilinkd/m17-cxx-demod/blob/master/README.md
   dev_url: https://github.com/mobilinkd/m17-cxx-demod
 
